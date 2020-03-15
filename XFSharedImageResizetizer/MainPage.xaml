@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XFSharedImageResizetizer.MainPage">
+
+    <!-- <SharedImage Include="Resources\castle1.svg" BaseSize="50,50" /> -->
+    <StackLayout Padding="20" Spacing="30" >
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Resizetizer NT" FontSize="Large" FontAttributes="Bold" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="各プラットフォームのリサイズ画像を自動で生成してくれる！" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="0. Nugetにより各プロジェクトに ResizetizerNT を入れる" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="1. メインプロジェクトに画像を追加する(svg / png)" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="2. 画像プロパティを SharedImage にする" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="3. プロジェクトファイルの編集で BaseSize を設定する" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="&lt;SharedImage Include=&quot;image.svg&quot; BaseSize=&quot;50,50&quot; /&gt;" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="https://redth.codes/resizetizer-nt-shared-images-for-xamarin/" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="https://github.com/redth/ResizetizerNT" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Each resize image display at 50x50" FontSize="Medium" FontAttributes="Bold" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="source image size" />
+                    <Span Text="{x:Static x:Environment.NewLine}" />
+                    <Span Text="Left=50x50    Center=500x500    Right=10x10" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <StackLayout Orientation="Horizontal" Spacing="40" HorizontalOptions="CenterAndExpand" >
+            <Image Source="castle1.png" WidthRequest="50" HeightRequest="50" />
+            <Image Source="castle2.png" WidthRequest="50" HeightRequest="50" />
+            <Image Source="castle3.png" WidthRequest="50" HeightRequest="50" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
