@@ -14,6 +14,9 @@
     <None Remove="Resources\castle1.svg" />
     <None Remove="Resources\castle2.svg" />
     <None Remove="Resources\castle3.svg" />
+    <None Remove="Resources\castle_1000x1000_1.png" />
+    <None Remove="Resources\castle_1000x1000_2.png" />
+    <None Remove="Resources\castle_1000x1000_3.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +27,10 @@
 
   <ItemGroup>
     <SharedImage Include="Resources\castle1.svg" BaseSize="50,50" />
-    <SharedImage Include="Resources\castle2.svg" BaseSize="500,500" />
+    <SharedImage Include="Resources\castle2.svg" BaseSize="1000,1000" />
     <SharedImage Include="Resources\castle3.svg" BaseSize="10,10" />
+    <SharedImage Include="Resources\castle_1000x1000_1.png" BaseSize="50,50" />
+    <SharedImage Include="Resources\castle_1000x1000_2.png" BaseSize="1000,1000" />
+    <SharedImage Include="Resources\castle_1000x1000_3.png" BaseSize="10,10" />
   </ItemGroup>
 </Project>
